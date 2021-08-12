@@ -23,14 +23,16 @@ public class ConnectTest extends HttpServlet  {
 		PrintWriter out = response.getWriter();
 		
 		String cnt_ = request.getParameter("cnt");
+
 		
 		int cnt = 100;
 		if(cnt_ != null && !cnt_.equals(""))
 			cnt = Integer.parseInt(cnt_);
 		
 		for (int i = 0; i < cnt; i++) {
-			out.println((i+1)+": ¾È³ç Servlet<br />");
+			out.println((i+1)+": hello Servlet<br />");
 		}
+		
 		
 	}
 }
